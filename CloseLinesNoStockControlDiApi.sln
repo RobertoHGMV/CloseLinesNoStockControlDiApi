@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloseLinesNoStockControlDiApi", "CloseLinesNoStockControlDiApi\CloseLinesNoStockControlDiApi.csproj", "{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Debug|x86.ActiveCfg = Debug|x86
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Debug|x86.Build.0 = Debug|x86
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Release|x86.ActiveCfg = Release|x86
+		{8EF94610-90D0-4A02-8E4F-A7FBE7F574EF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C96A5F9-2447-4B33-85B6-42C29349547E}
+	EndGlobalSection
+EndGlobal
