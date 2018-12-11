@@ -62,10 +62,9 @@ namespace CloseLinesNoStockControlDiApi
                 throw new Exception($"Não foi possível localizar a cotação N°[{docEntry}] no SAP.");
 
             var itensToCloseLines = GeItensWithNotStockControl(businessObject);
+            SetContractId(businessObject);
             CloseLines(businessObject, itensToCloseLines);
-
-            if (businessObject.Update() != 0)
-                throw new Exception($"Erro ao atualizar documento no SAP.\n[{Company.GetLastErrorCode()}]-[{Company.GetLastErrorDescription()}]");
+            UpdateDocument(businessObject);
         }
 
         private void CloseLines(Documents businessObject, IList<string> itensToCloseLines)
@@ -78,6 +77,18 @@ namespace CloseLinesNoStockControlDiApi
                     businessObject.Lines.LineStatus == BoStatus.bost_Open)
                     businessObject.Lines.LineStatus = BoStatus.bost_Close;
             }
+        }
+
+        private void UpdateDocument(Documents businessObject)
+        {
+            if (businessObject.Update() != 0)
+                throw new Exception($"Erro ao atualizar documento no SAP.\n[{Company.GetLastErrorCode()}]-[{Company.GetLastErrorDescription()}]");
+        }
+
+        private void SetContractId(Documents businessObject)
+        {
+            businessObject.UserFields.Fields.Item("U_ContractId").Value = 1;
+            UpdateDocument(businessObject);
         }
 
         private IList<string> GeItensWithNotStockControl(Documents businessObject)
