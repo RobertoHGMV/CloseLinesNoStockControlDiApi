@@ -31,7 +31,7 @@ namespace CloseLinesNoStockControlDiApi
             Company.CompanyDB = CompanyDB;
             Company.DbUserName = DbUserName;
             Company.DbPassword = DbPassword;
-            Company.DbServerType = BoDataServerTypes.dst_MSSQL2014;
+            Company.DbServerType = DbServerType;
             Company.UserName = UserName;
             Company.Password = Password;
 

@@ -27,11 +27,11 @@ namespace CloseLinesNoStockControlDiApi
 
         private static void SetParams(AdonService service)
         {
-            service.Server = @"sap91-pc\b1";
-            service.CompanyDB = "SBO_AREA_SEM_ADDON";
+            service.Server = @"INVENT036";
+            service.CompanyDB = "SBO_ENGESOFTWARE_TESTE";
             service.DbUserName = "sa";
             service.DbPassword = "sap@123";
-            service.DbServerType = BoDataServerTypes.dst_MSSQL2014;
+            service.DbServerType = BoDataServerTypes.dst_MSSQL2017;
             service.UserName = "manager";
             service.Password = "sapbone";
         }
